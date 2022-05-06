@@ -257,6 +257,10 @@ on enable-low-power
     # Set LMK minfree
     write /sys/module/lowmemorykiller/parameters/minfree "18432,23040,27648,32256,85296,120640"
 
+    # report max frequency to unity tasks.
+    write /proc/sys/kernel/sched_lib_name "com.miHoYo.,UnityMain,libunity.so"
+    write /proc/sys/kernel/sched_lib_mask_force 255
+
     # Enable PowerHAL hint processing
     setprop vendor.powerhal.init 1
 

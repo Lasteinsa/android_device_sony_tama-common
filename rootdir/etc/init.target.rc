@@ -39,8 +39,8 @@ on early-init
 
 on init
     # Setup permission for Power HAL
-
     chown system system /dev/stune/top-app/schedtune.boost
+
     chmod 0664 /dev/stune/top-app/schedtune.boost
 
     write /dev/stune/foreground/schedtune.sched_boost_no_override 1
