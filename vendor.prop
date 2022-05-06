@@ -107,9 +107,8 @@ ro.frp.pst=/dev/block/bootdevice/by-name/frp
 # Graphics
 debug.egl.hw=0
 debug.sf.hw=0
-debug.sf.latch_unsignaled=0
 ro.hardware.egl=adreno
-ro.hardware.vulkan=sdm845
+ro.hardware.vulkan=adreno
 ro.opengles.version=196610
 persist.demo.hdmirotationlock=false
 persist.sys.sf.native_mode=0
@@ -168,3 +167,5 @@ persist.vendor.sensors.direct_channel=false
 
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
+
+# exer
